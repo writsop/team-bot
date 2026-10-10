@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex">
+<title>Shan Team Bot</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1f2328; --muted: #59636e; --link: #0969da; --rule: #d1d9e0; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0d1117; --fg: #e6edf3; --muted: #9198a1; --link: #4493f8; --rule: #3d444d; }
+  }
+  body { background: var(--bg); color: var(--fg); margin: 0; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; overflow-wrap: break-word; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 8px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; }
+  p, li { color: var(--fg); }
+  .lede { color: var(--muted); margin: 0 0 24px; }
+  a { color: var(--link); overflow-wrap: anywhere; word-break: break-word; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Shan Team Bot</h1>
+  <p class="lede">An internal assistant for a small team. It is not offered to the public.</p>
+
+  <h2>What it does</h2>
+  <p>Team members ask the assistant, which is powered by AI, in their team chat for training and reference
+  materials, such as lecture slides, presentation templates, recordings and guides. The assistant finds the item
+  in material that the larger organization the team belongs to shares with its members: a shared drive of past
+  trainings, a presentation-template folder, and guides and documents linked from that organization's resource
+  website.</p>
+  <p>It answers from the item's content and gives its title and link. When a team member asks, it posts a copy of
+  a slide deck or document, or a new file built from the material, in the chat. Recordings are shared as links
+  only.</p>
+
+  <h2>Google account access</h2>
+  <p>For this, the app uses one Google permission: read-only access to Google Drive. Google's consent screen words
+  this as access to all of the account's Drive files, but the app is built to open and download only files inside
+  the shared material described above. For any other item, it only checks where the item is and then refuses
+  it.</p>
+  <p>The read-only permission does not let the app edit, delete or move anything in Google Drive, or change who a
+  file is shared with.</p>
+  <p>Details, including the outside services that help run the assistant, are in the
+  <a href="https://writsop.github.io/team-bot/privacy.html">privacy policy</a>.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:writsop@gmail.com">writsop@gmail.com</a></p>
+
+  <footer><a href="https://writsop.github.io/team-bot/privacy.html">Privacy policy</a></footer>
+</main>
+</body>
+</html>
