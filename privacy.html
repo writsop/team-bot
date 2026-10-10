@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="color-scheme" content="light dark">
+<meta name="robots" content="noindex">
+<title>Shan Team Bot privacy policy</title>
+<style>
+  :root { --bg: #ffffff; --fg: #1f2328; --muted: #59636e; --link: #0969da; --rule: #d1d9e0; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #0d1117; --fg: #e6edf3; --muted: #9198a1; --link: #4493f8; --rule: #3d444d; }
+  }
+  body { background: var(--bg); color: var(--fg); margin: 0; font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; overflow-wrap: break-word; }
+  main { max-width: 680px; margin: 0 auto; padding: 48px 16px 64px; }
+  h1 { font-size: 28px; margin: 0 0 8px; }
+  h2 { font-size: 18px; margin: 32px 0 8px; }
+  li { margin: 0 0 8px; }
+  .lede { color: var(--muted); margin: 0 0 24px; }
+  a { color: var(--link); overflow-wrap: anywhere; word-break: break-word; }
+  code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; font-size: 0.9em; overflow-wrap: anywhere; word-break: break-word; }
+  footer { margin-top: 40px; padding-top: 16px; border-top: 1px solid var(--rule); color: var(--muted); font-size: 14px; }
+</style>
+</head>
+<body>
+<main>
+  <h1>Privacy policy</h1>
+  <p class="lede">Shan Team Bot. Last updated October 10, 2026.</p>
+
+  <h2>Who uses the app</h2>
+  <p>Shan Team Bot is an internal assistant for one small team. It is connected to one Google account, which
+  belongs to a member of the team. Other team members use the assistant through their team chat and never sign in
+  to it with Google. It is not offered to the public.</p>
+
+  <h2>What Google data the app accesses</h2>
+  <p>With the account holder's consent, the app uses one Google permission for this: read-only access to Google
+  Drive (<code>https://www.googleapis.com/auth/drive.readonly</code>). Google's consent screen describes it as "See and
+  download all your Google Drive files". The app is built to use it only for material that the larger organization
+  the team belongs to shares with its members: a shared drive of past trainings and its catalog lists, a
+  presentation-template folder, and guides and documents linked from that organization's resource website,
+  including files inside folders linked there.</p>
+  <p>It reads the names, folders and contents of files in that material only when a team member's request in the
+  team chat needs it, such as a question about a past training or a guide, or a file they ask the assistant to
+  make, or when the connection is set up or checked.</p>
+  <p>When a team member points the assistant to a specific Drive item, the app first reads that item's basic details
+  (its name, type and parent folders) to confirm it is inside that material. Anything outside is refused, and its
+  contents are never downloaded or stored.</p>
+  <p>Apart from checking the account's email address, to confirm the right account was connected, the app does not
+  read the account's email, contacts, calendar or any other Google data.</p>
+
+  <h2>How the data is used</h2>
+  <ul>
+    <li>A requested file is downloaded to the team's own computer, so the assistant can read it to answer, or use it
+    as the base for a file a team member asks for. The copy is kept so it does not have to be downloaded again.
+    Recordings are never downloaded; only their title, date, link and length are used.</li>
+    <li>The contents of a requested file, mostly the text taken from it, may be processed by the AI services that run
+    the assistant: Anthropic's Claude, and OpenAI's Codex as a backup when Claude is unavailable. This happens only
+    to answer team members' requests in the team chat and to make the files they ask for. The text is kept with the
+    downloaded copy and may be used again for later requests from the team.</li>
+    <li>Original files are not posted in the chat. Answers, and any file a team member asks for (a newly made copy of
+    a slide deck or document, or a file built from the material), are posted only to the team chat where they were
+    asked for, through the team's chat app (Telegram).</li>
+    <li>If a team member asks by voice or asks for a spoken reply, a short spoken version of the answer, which can
+    summarize a requested file, is turned into audio by Microsoft's online text-to-speech service.</li>
+    <li>The read-only permission does not let the app edit, delete or move anything in Google Drive, or change who a
+    file is shared with.</li>
+    <li>Google data is not sold and not used for advertising. Besides the team's members and the people who run the
+    assistant, it goes only to the service providers named on this page, and only so that they can run the
+    assistant.</li>
+  </ul>
+
+  <h2>Storage and security</h2>
+  <p>The access token is stored only on the team's own computer and is not given to anyone else. Downloaded copies,
+  the text taken from them, and a list of the file names and links the app has seen are kept on that computer until
+  the team removes them. The people who run the assistant may look at these, and at the assistant's logs, to fix
+  problems or keep it secure.</p>
+
+  <h2>Removing access and deleting copies</h2>
+  <p>The account holder can remove the app's access at any time at
+  <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>. To have the stored copies
+  deleted, email <a href="mailto:writsop@gmail.com">writsop@gmail.com</a>. The team then deletes the downloaded
+  copies, the text taken from them and the stored list of file names and links. Files already posted in the team
+  chat stay there until they are deleted in the chat.</p>
+
+  <h2>Contact</h2>
+  <p><a href="mailto:writsop@gmail.com">writsop@gmail.com</a></p>
+
+  <footer><a href="https://writsop.github.io/team-bot/">Shan Team Bot</a></footer>
+</main>
+</body>
+</html>
